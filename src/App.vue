@@ -1,8 +1,10 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import TopNav from "./components/topNav.vue";
 </script>
 
 <template>
+  <top-nav :pageHeading="`Oversikt`" :navigationItems="[]"></top-nav>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
