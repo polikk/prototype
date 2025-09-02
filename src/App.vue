@@ -1,7 +1,7 @@
 <template>
   <top-nav :pageHeading="`Oversikt`"></top-nav>
   <main>
-    <div style="padding-top: 32px; padding-left: 48px; padding-right: 48px; min-height: calc(100vh - 60px);" class="bg-light">
+    <div style="padding-top: 32px; padding-bottom: 32px; padding-left: 48px; padding-right: 48px; min-height: calc(100vh - 60px);" class="bg-light">
       <router-view />
     </div>
   </main>
