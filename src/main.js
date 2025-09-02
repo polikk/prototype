@@ -3,6 +3,8 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import PrimeVue from 'primevue/config';
+import Aura from '@primeuix/themes/aura';
 
 import HomeView from './HomeView.vue'
 import AboutView from './AboutView.vue'
@@ -19,4 +21,16 @@ const router = createRouter({
   routes
 })
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App);
+app.use(router);
+app.use(PrimeVue, {
+    theme: {
+        preset: Aura,
+    options: {
+      prefix: 'p',
+      darkModeSelector: 'html',
+      cssLayer: false
+    }
+    }
+ });
+app.mount('#app');
