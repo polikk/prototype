@@ -1,22 +1,11 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 import TopNav from "./components/topNav.vue";
+import DarkModeSwitch from './components/DarkModeSwitch.vue';
 </script>
 
 <template>
   <top-nav :pageHeading="`Oversikt`" :navigationItems="[]"></top-nav>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-       <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/contact">Contact</router-link>
-      </nav>
- 
-    </div>
-  </header>
 
   <main>
     <router-view />
