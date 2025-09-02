@@ -1,10 +1,9 @@
 <template>
   <div>
-    <h1>Contact Page</h1>
-    <p>Get in touch with us!</p>
+    <AccordionCustom />
   </div>
 </template>
 
 <script setup>
-
+import AccordionCustom from './components/AccordionCustom.vue';
 </script>
