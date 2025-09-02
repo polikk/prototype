@@ -1,10 +1,10 @@
 <template>
 	<div id="topNav" aria-labelledby="topNav">
-		<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" style="max-height: 60px;">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" style="max-height: 60px; overflow-y: hidden;">
 			<div>
 				<a href="/contact" class="navbar-brand me-0" style="font-size: 1rem; text-transform: uppercase; vertical-align: middle; background-color: white;">
-					<img src="/images/Logo.png" alt="" style="height: 4rem; margin-top: -5px; position: absolute; top: 0; left: -16px;" class="mx-3" />
-					<span style="margin-left: 78px;">
+					<img src="/images/Logo_2.png" alt="" style="height: 5rem; margin-top: -13px; position: absolute; top: 4px; left: -20px;" class="mx-3" />
+					<span style="margin-left: 71px; position: relative; z-index: 10;">
 						{{ brandText }}
 					</span>
 				</a>
