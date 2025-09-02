@@ -19,12 +19,12 @@
                   <Badge value="Tiltak" style="margin-left:8px;" />
                 </template>
                 <DataTable :value="tiltak.table">
-                  <Column field="col1" header="Column 1">
+                  <Column field="col1">
                     <template #body="{ data, index }">
                       <span v-if="editRow !== `${i}-${j}-${k}-${index}-col1`">{{ data.col1 }}</span>
                     </template>
                   </Column>
-                  <Column field="col2" header="Column 2">
+                  <Column field="col2">
                     <template #body="{ data, index }">
                       <span v-if="editRow !== `${i}-${j}-${k}-${index}-col2`">{{ data.col2 }}</span>
                       <input v-else v-model="tiltak.table[index].col2" @blur="editRow = null" />
@@ -56,7 +56,6 @@
   </div>
 </template>
 
-
 <script setup>
 import { ref } from 'vue';
 import Accordion from 'primevue/accordion';
@@ -73,3 +72,36 @@ const data = ref(accordionData);
 
 // messageList removed; now using messages from accordionData
 </script>
+
+<style >
+.p-accordion .p-accordion-header .p-accordion-header-link {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.p-accordion .p-accordion-header .p-accordion-toggle-icon {
+  margin-right: auto;
+  margin-left: 0 !important;
+}
+.p-badge {
+  margin-left : 85% !important;
+}
+.p-row-even{
+    background: #9DC2CC1F!important;
+    border: none;
+    td {
+        padding: 5px!important;
+        border: none!important;
+    }
+}
+.p-row-odd{
+    td {
+        padding: 5px!important;
+        border: none!important;
+    }
+    background: #9DC2CC1F!important;
+    border: none;
+}
+.p-datatable-header-cell {
+    display: none;
+}
+</style>

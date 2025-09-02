@@ -1,6 +1,6 @@
 export const accordionData = [
   {
-    header: "nivå 1",
+    header: "Nivå 1",
     subsections: [
       {
         header: "mål 1",
@@ -8,10 +8,10 @@ export const accordionData = [
           {
             header: "tiltak 1",
             table: [
-              { col1: "Row 1, Col 1", col2: "Row 1, Col 2" },
-              { col1: "Row 2, Col 1", col2: "Row 2, Col 2" },
-              { col1: "Row 3, Col 1", col2: "Row 3, Col 2" },
-              { col1: "Row 4, Col 1", col2: "Row 4, Col 2" }
+              { col1: "Opprettet", col2: "20.02.2025" },
+              { col1: "Frist", col2: "20.03.2025" },
+              { col1: "Involverte", col2: "Barnevernet, Politiet" },
+              { col1: "Koordinator", col2: "Ive Iversen"}
             ],
             messages: [
               {
@@ -137,10 +137,10 @@ export const accordionData = [
           {
             header: "tiltak 4",
             table: [
-              { col1: "Row 1, Col 1", col2: "Row 1, Col 2" },
-              { col1: "Row 2, Col 1", col2: "Row 2, Col 2" },
-              { col1: "Row 3, Col 1", col2: "Row 3, Col 2" },
-              { col1: "Row 4, Col 1", col2: "Row 4, Col 2" }
+              { col1: "Row 1, Col 1", col2: "20.02.2025" },
+              { col1: "Row 2, Col 1", col2: "20.03.2025" },
+              { col1: "Row 3, Col 1", col2: "Barnevernet, Politiet" },
+              { col1: "Row 4, Col 1", col2: "Ive Iversen" }
             ],
             messages: [
               {
