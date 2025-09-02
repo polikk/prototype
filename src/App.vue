@@ -1,14 +1,9 @@
-<script setup>
-import { RouterLink } from 'vue-router';
-import TopNav from "./components/topNav.vue";
-import DarkModeSwitch from './components/DarkModeSwitch.vue';
-</script>
-
 <template>
-  <top-nav :pageHeading="`Oversikt`" :navigationItems="[]"></top-nav>
-
+  <top-nav :pageHeading="`Oversikt`"></top-nav>
   <main>
-    <router-view />
+    <div style="padding-top: 32px; padding-left: 48px; padding-right: 48px; min-height: calc(100vh - 60px);" class="bg-light">
+      <router-view />
+    </div>
   </main>
 </template>
  
@@ -40,3 +35,7 @@ header {
   }
 }
 </style>
+
+<script setup>
+import TopNav from "./components/topNav.vue";
+</script>
