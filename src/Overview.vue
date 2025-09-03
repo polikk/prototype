@@ -18,25 +18,13 @@
                 <p class="mb-0" style="color: black;">6500 Kristiansund</p>
               </div>
             </div>
-            <!-- <div class="ms-2 d-flex">
-              <p class="me-2 mb-0" style="color: black;"><strong>Født</strong></p>
-              <p class="mb-0" style="color: black;">19.03.2015</p>
-            </div>
-            <div class="ms-2 d-flex">
-              <p class="me-2 mb-0" style="color: black;"><strong>Adresse</strong></p>
-              <p class="mb-0" style="color: black;">Gateadresse 01</p>
-            </div>
-            <div class="ms-2 d-flex">
-              <p class="me-2 mb-0" style="color: black;"><strong>Sted</strong></p>
-              <p class="mb-0" style="color: black;">6500 Kristiansund</p>
-            </div> -->
           </div>
         </div>
         <p class="mb-0" style="color: black;"><strong>Første aktivitet registrert 13.11.2023</strong></p>
         <p class="mb-0" style="color: black;">Bruker er glad i xxxx, har noen utfordringer med xxxx. Bor til vanlig sammen med xxx, som har 80% omsorg.</p>
         <p class="mb-0" style="color: black;">Beskrives av lærer som xxxxxx og xxxxxx. Trivsel på skolen oppsummeres som xxx.</p>
       </div>
-      <AccordionCustom />
+      <AccordionCustom :disabled="true" />
     </div>
     <div class="w-25 ms-3" style="min-height: -webkit-fill-available;">
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
