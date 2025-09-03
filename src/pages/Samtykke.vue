@@ -3,7 +3,7 @@
     <div class="samt">
     <div style="flex-grow: 2;">
       <div class="bg-white d-flex align-items-center p-3 mb-3" style="border-radius: 8px;">
-        <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
+        <img src="/images/User1.png" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
         <div class="ms-2">
           <p class="mb-0" style="color: black;"><strong>Philip Pedersen</strong></p>
           <p class="mb-0" style="color: black;">19.03.2015</p>

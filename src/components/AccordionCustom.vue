@@ -124,19 +124,19 @@ watch(data, (val) => {
   });
 }, { immediate: true });
 
-function getRandomPhotoUrl() {
-  const photos = [
-    'https://randomuser.me/api/portraits/men/1.jpg',
-    'https://randomuser.me/api/portraits/women/2.jpg',
-    'https://randomuser.me/api/portraits/men/3.jpg',
-    'https://randomuser.me/api/portraits/women/4.jpg',
-    'https://randomuser.me/api/portraits/men/5.jpg',
-    'https://randomuser.me/api/portraits/women/6.jpg',
-    'https://randomuser.me/api/portraits/men/7.jpg',
-    'https://randomuser.me/api/portraits/women/8.jpg',
-  ];
-  return photos[Math.floor(Math.random() * photos.length)];
-}
+// function getRandomPhotoUrl() {
+//   const photos = [
+//     'https://randomuser.me/api/portraits/men/2.jpg',
+//     'https://randomuser.me/api/portraits/women/2.jpg',
+//     'https://randomuser.me/api/portraits/men/3.jpg',
+//     'https://randomuser.me/api/portraits/women/4.jpg',
+//     'https://randomuser.me/api/portraits/men/5.jpg',
+//     'https://randomuser.me/api/portraits/women/6.jpg',
+//     'https://randomuser.me/api/portraits/men/7.jpg',
+//     'https://randomuser.me/api/portraits/women/8.jpg',
+//   ];
+//   return photos[Math.floor(Math.random() * photos.length)];
+// }
 
 function addCommentToTiltak(tiltak, malIdx, tiltakIdx) {
   if (!tiltak.newComment || !tiltak.newComment.trim()) return;
@@ -146,7 +146,7 @@ function addCommentToTiltak(tiltak, malIdx, tiltakIdx) {
     message: tiltak.newComment.trim(),
     author: 'Bruker', // You can replace with actual user
     date: new Date().toLocaleDateString('no-NO') + ' ' + new Date().toLocaleTimeString('no-NO', { hour: '2-digit', minute: '2-digit' }),
-    photoUrl: getRandomPhotoUrl(),
+    photoUrl: "https://randomuser.me/api/portraits/men/1.jpg",
   });
   tiltak.newComment = '';
   showCommentInputs.value[malIdx][tiltakIdx] = false;

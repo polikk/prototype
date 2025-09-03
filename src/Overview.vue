@@ -3,7 +3,7 @@
     <div style="align-self: self-start;">
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
         <div class="d-flex mb-3">
-          <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 80px; height: 80px; border-radius: 64px;">
+          <img src="/images/User1.png" alt="User photo" class="user-photo" style="width: 80px; height: 80px; border-radius: 64px;">
           <div>
             <p class="ms-2 mb-2" style="color: black;"><strong>Philip Pedersen</strong></p>
             <div class="ms-2 d-flex">
@@ -59,7 +59,7 @@
           Koordinator
         </p>
         <div class="d-flex align-items-center">
-          <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
+          <img src="/images/User2.png" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
           <div class="ms-2">
             <p class="mb-0" style="color: black;"><strong>Morten Mortensen</strong></p>
             <p class="mb-0" style="color: black;">Barnevernet</p>
