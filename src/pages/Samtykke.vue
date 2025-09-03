@@ -1,28 +1,13 @@
 <template>
-  <div class="d-flex" style="align-items: center; justify-content: center;">
-    <div>
-      <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
-        <div class="d-flex mb-3">
-          <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 80px; height: 80px; border-radius: 64px;">
-          <div>
-            <p class="ms-2 mb-2" style="color: black;"><strong>Philip Pedersen</strong></p>
-            <div class="ms-2 d-flex">
-              <div>
-                <p class="me-2 mb-0" style="color: black;"><strong>Født</strong></p>
-                <p class="me-2 mb-0" style="color: black;"><strong>Adresse</strong></p>
-                <p class="me-2 mb-0" style="color: black;"><strong>Sted</strong></p>
-              </div>
-              <div>
-                <p class="mb-0" style="color: black;">19.03.2015</p>
-                <p class="mb-0" style="color: black;">Gateadresse 01</p>
-                <p class="mb-0" style="color: black;">6500 Kristiansund</p>
-              </div>
-            </div>
-          </div>
+  <div class="d-flex samtykke" style="align-items: center; justify-content: center;">
+    <div class="samt">
+    <div style="flex-grow: 2;">
+      <div class="bg-white d-flex align-items-center p-3 mb-3" style="border-radius: 8px;">
+        <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
+        <div class="ms-2">
+          <p class="mb-0" style="color: black;"><strong>Philip Pedersen</strong></p>
+          <p class="mb-0" style="color: black;">19.03.2015</p>
         </div>
-        <p class="mb-0" style="color: black;"><strong>Første aktivitet registrert 13.11.2023</strong></p>
-        <p class="mb-0" style="color: black;">Bruker er glad i xxxx, har noen utfordringer med xxxx. Bor til vanlig sammen med xxx, som har 80% omsorg.</p>
-        <p class="mb-0" style="color: black;">Beskrives av lærer som xxxxxx og xxxxxx. Trivsel på skolen oppsummeres som xxx.</p>
       </div>
       <template v-for="status in statusOrder" :key="status">
           <h2 class="status-title">Samtykke {{ status }}</h2>
@@ -30,7 +15,7 @@
           <div v-if="grouped[status].length === 0" class="empty-status">Ingen samtykker med status "{{ status }}".</div>
         </template>
     </div>
-    <div class="w-25 ms-3" style="min-height: -webkit-fill-available;">
+    <div class="w-25 ms-3" style="min-height: -webkit-fill-available; flex-grow: 1;">
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
         <p class="mb-2" style="color: black;">Send inn nytt samtykke</p>
         <div class="alert alert-info p-2 mb-3" role="alert">
@@ -94,6 +79,7 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
 </template>
 
@@ -107,6 +93,17 @@ const statusOrder = computed(() => Object.keys(grouped.value));
 </script>
 
 <style scoped>
+.samtykke{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.samt{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .samtykke-page {
   max-width: 700px;
   margin: 40px auto;
