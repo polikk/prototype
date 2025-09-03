@@ -13,6 +13,7 @@ import OverviewRoute from './Overview.vue'
 
 const routes = [
   { path: '/', component: HomeView },
+    { path: '/prototype', component: ContactView },
   { path: '/about', component: AboutView },
   { path: '/contact', component: ContactView },
   { path: '/overview', component: OverviewRoute }
