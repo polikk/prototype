@@ -39,7 +39,7 @@
                     </template>
                   </Column>
                 </DataTable>
-                <div style="margin: 16px 0 24px 0;">
+                <div style="margin: 16px 0   0;">
                   <div class="suptitel">Kommentarer {{ tiltak.messages.length }}</div>
                   <div v-for="(msg, idx) in tiltak.messages" :key="idx">
                     <MessageCard
@@ -52,7 +52,7 @@
                     />
                   </div>
                   <!-- Show button, then input after click -->
-                  <div  style="margin-top: 16px; display: flex; gap: 8px; align-items: center;">
+                  <div v-if="!props.disabled" style="margin-top: 16px; display: flex; gap: 8px; align-items: center;">
                     <input v-model="tiltak.newComment" placeholder="Legg til kommentar..." style="flex: 1;" :disabled="disabled" />
                     <IconButton @click="addCommentToTiltak(tiltak, j, tiltakIdx)" :disabled="disabled">
                       <AddCommentIcon />

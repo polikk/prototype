@@ -56,6 +56,10 @@ function triggerFileInput() {
 function handleFiles(event) {
   const selected = Array.from(event.target.files);
   selected.forEach(file => {
+    if (file.size > 10 * 1024 * 1024) {
+      alert('Filen kan ikke være større enn 10MB.');
+      return;
+    }
     // Auto-generate title from file name (without extension)
     const nameParts = file.name.split('.');
     let title = nameParts.length > 1 ? nameParts.slice(0, -1).join('.') : file.name;
