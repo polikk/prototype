@@ -3,14 +3,14 @@
     <div class="samt">
     <div style="flex-grow: 2;">
       <div class="bg-white d-flex align-items-center p-3 mb-3" style="border-radius: 8px;">
-        <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
+        <img src="/images/User1.png" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
         <div class="ms-2">
-          <p class="mb-0" style="color: black;"><strong>Philip Pedersen</strong></p>
-          <p class="mb-0" style="color: black;">19.03.2015</p>
+          <p class="mb-0" style="color: black;"><strong>Per</strong></p>
+          <p class="mb-0" style="color: black;">19.03.2017</p>
         </div>
       </div>
       <template v-for="status in statusOrder" :key="status">
-          <h2 class="status-title">Samtykke {{ status }}</h2>
+          <h2 class="status-title">Samtykke {{ status.toLowerCase() }}</h2>
           <samtykke-card v-for="(item, idx) in grouped[status]" :key="item.Fil + idx" :value="item" />
           <div v-if="grouped[status].length === 0" class="empty-status">Ingen samtykker med status "{{ status }}".</div>
         </template>
@@ -18,11 +18,8 @@
     <div class="w-25 ms-3" style="min-height: -webkit-fill-available; flex-grow: 1;">
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
         <p class="mb-2" style="color: black;">Send inn nytt samtykke</p>
-        <div class="alert alert-info p-2 mb-3" role="alert">
+        <div class="alert alert-info p-2 mb-0" role="alert">
           Du har ingen endringer som gjør at du behøver å sende inn nytt samtykke.
-        </div>
-        <div class="d-flex">
-          <button class="btn btn-primary ms-auto" @click.prevent="">Endre samtykkemal</button>
         </div>
       </div>
       <div class="bg-white p-3 mb-4" style="border-radius: 8px;">
@@ -117,7 +114,7 @@ h1 {
   margin-bottom: 18px;
 }
 .status-title {
-  color: #387F93;
+  color: black;
   font-size: 1.3em;
   margin: 32px 0 12px 0;
   font-weight: bold;

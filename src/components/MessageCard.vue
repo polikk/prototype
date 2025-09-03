@@ -3,7 +3,7 @@
     <img :src="photoUrl" alt="User photo" class="user-photo" />
     <div class="message-content">
       <div class="message-header">
-        <span class="message-meta">{{ date }} by {{ author }}</span>
+        <span class="message-meta">{{ date }} av {{ author }}</span>
       </div>
       <div class="message-body">
         <template v-if="!isEditing">
