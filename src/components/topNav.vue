@@ -22,7 +22,7 @@
 						</img>
 						<span class="me-3" style="vertical-align: middle; color: black;">{{ loggedInPersonName }}</span>
 					</div>
-					<button class="btn btn-outline-primary" @click.prevent=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Logg ut</button>
+					<button class="btn btn-outline-primary" @click.prevent="">Logg ut</button>
 				</div>
 			</div>
 		</nav>
