@@ -3,17 +3,20 @@
     <img :src="photoUrl" alt="User photo" class="user-photo" />
     <div class="message-content">
       <div class="message-header">
-        <span class="message-title">{{ title }}</span>
         <span class="message-meta">{{ date }} by {{ author }}</span>
       </div>
       <div class="message-body">
         <template v-if="!isEditing">
           {{ message }}
-          <button class="edit-btn" @click="startEdit">✏️</button>
+          <IconButton v-if="!props.disabled" @click="startEdit" :customStyle="{ marginLeft: '8px' }">
+            <VectorIcon />
+          </IconButton>
         </template>
         <template v-else>
           <input v-model="editedMessage" class="edit-input" />
-          <button class="save-btn" @click="saveEdit">💾</button>
+          <IconButton v-if="!props.disabled" @click="saveEdit" :customStyle="{ marginLeft: '8px' }">
+            <VectorIcon />
+          </IconButton>
         </template>
       </div>
     </div>
@@ -22,12 +25,15 @@
 
 <script setup>
 import { ref, watch } from 'vue';
+import IconButton from './IconButton.vue';
+import VectorIcon from './VectorIcon.vue';
 
 const props = defineProps({
   title: String,
   author: String,
   date: String,
-  photoUrl: String
+  photoUrl: String,
+  disabled: Boolean
 })
 const message = defineModel('message');
 
@@ -50,12 +56,12 @@ function saveEdit() {
 <style scoped>
 .message-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 12px;
   margin-bottom: 12px;
-  background: #fff;
+  background: #9DC2CC1F;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 .user-photo {
@@ -86,6 +92,7 @@ function saveEdit() {
   font-size: 0.95rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .edit-btn {
   margin-left: 8px;

@@ -23,12 +23,9 @@ const props = defineProps({
 <style scoped>
 .icon-btn {
   border-radius: 50%;
-  margin-left: 8px;
   background: transparent;
   border: 2px solid transparent;
   color: #387F93;
-  width: 32px;
-  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
