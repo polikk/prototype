@@ -1,6 +1,6 @@
 <template>
 	<div id="topNav" aria-labelledby="topNav">
-		<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" style="max-height: 60px; overflow-y: hidden;">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" style="max-height: 60px; overflow-y: hidden; display: flex; justify-content: space-between;">
 			<div>
 				<a href="/contact" class="navbar-brand me-0" style="font-size: 1rem; text-transform: uppercase; vertical-align: middle; background-color: white;">
 					<img src="/images/Logo_2.png" alt="" style="height: 5rem; margin-top: -13px; position: absolute; top: 4px; left: -20px;" class="mx-3" />
