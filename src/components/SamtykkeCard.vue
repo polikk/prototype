@@ -5,7 +5,7 @@
     </div>
     <div class="card-body">
         <div class="rowtable ">
-            <strong>Fill</strong> <span class="file-name">{{ value.Fil }}</span></div>
+            <strong>Fil</strong> <span class="file-name">{{ value.Fil }}</span></div>
         <div class="rowtable">
             <strong>Sendt dato:</strong> <span>{{ value['Sendt dato'] }}</span></div>
         <div class="rowtable"
