@@ -95,6 +95,7 @@ Læreren beskriver Per som litt stille og inadvent, men han er glad i å være s
         </p>
         <p class="mb-0" style="color: black;">Samtykke gitt av Lise Olsen 11.08.2025.</p>
         <p class="mb-0" style="color: black;">Registrert av Sara Larsen.</p>
+        
       </div>
     </div>
   </div>
