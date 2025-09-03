@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
-        <p class="mb-2" style="color: black;">Koordinator</p>
+        <p class="mb-2" style="color: black;"><i class="fa-regular fa-star"></i>Koordinator</p>
         <div class="d-flex align-items-center">
           <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
           <div class="ms-2">
