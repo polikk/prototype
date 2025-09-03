@@ -25,7 +25,7 @@
           <button class="btn btn-primary ms-auto" @click.prevent="">Endre samtykkemal</button>
         </div>
       </div>
-      <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
+      <div class="bg-white p-3 mb-4" style="border-radius: 8px;">
         <p class="mb-3" style="color: black;">Innvolverte i saken</p>
         <p class="mb-2" style="color: black;">Venter på godkjenning</p>
         <div class="ms-2 mb-3 d-flex">
@@ -41,7 +41,7 @@
           </div>
         </div>
         <p class="mb-2" style="color: black;">Avklart samtykke</p>
-        <div class="ms-2 mb-2 d-flex">
+        <div class="ms-2 mb-3 d-flex">
           <div>
             <p class="me-2 mb-0" style="color: black;"><strong>Rolle</strong></p>
             <p class="me-2 mb-0" style="color: black;"><strong>Navn</strong></p>
@@ -53,7 +53,7 @@
             <p class="mb-0" style="color: black;">20.05.2025</p>
           </div>
         </div>
-        <div class="ms-2 mb-2 d-flex">
+        <div class="ms-2 mb-3 d-flex">
           <div>
             <p class="me-2 mb-0" style="color: black;"><strong>Rolle</strong></p>
             <p class="me-2 mb-0" style="color: black;"><strong>Navn</strong></p>

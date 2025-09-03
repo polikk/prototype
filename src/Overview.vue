@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex" style="align-items: center; justify-content: center;">
-    <div>
+    <div style="align-self: self-start;">
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
         <div class="d-flex mb-3">
           <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 80px; height: 80px; border-radius: 64px;">
