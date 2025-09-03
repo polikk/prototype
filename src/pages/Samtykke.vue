@@ -10,7 +10,7 @@
         </div>
       </div>
       <template v-for="status in statusOrder" :key="status">
-          <h2 class="status-title">Samtykke {{ status }}</h2>
+          <h2 class="status-title">Samtykke {{ status.toLowerCase() }}</h2>
           <samtykke-card v-for="(item, idx) in grouped[status]" :key="item.Fil + idx" :value="item" />
           <div v-if="grouped[status].length === 0" class="empty-status">Ingen samtykker med status "{{ status }}".</div>
         </template>
@@ -114,7 +114,7 @@ h1 {
   margin-bottom: 18px;
 }
 .status-title {
-  color: #387F93;
+  color: black;
   font-size: 1.3em;
   margin: 32px 0 12px 0;
   font-weight: bold;

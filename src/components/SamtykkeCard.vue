@@ -51,7 +51,7 @@ const statusClass = computed(() => {
 }
 .file-name {
   font-weight: bold;
-  color: #387F93;
+  color: #141b4d;
   font-size: 1.08em;
 }
 .status {
