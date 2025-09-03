@@ -36,7 +36,7 @@
         </p>
         <div class="bg-light px-3 py-2">
           <p class="mb-0" style="color: black;">12.05.25 kl. 14:30</p>
-          <p class="mb-0" style="color: black;"><strong>Dette er en tittel på melding</strong></p>
+          <p class="mb-0" style="color: black;"><strong>Tittel melding</strong></p>
         </div>
       </div>
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
@@ -47,7 +47,8 @@
           Kommende avtaler
         </p>
         <div class="bg-light px-3 py-2">
-          <p class="mb-0" style="color: black;">26.05.25 kl. 13:00-15:00</p>
+          <p class="mb-0" style="color: black;">26.05.25</p>
+          <p class="mb-0" style="color: black;">kl. 13:00-15:00</p>
           <p class="mb-0" style="color: black;">Morten Mortensen</p>
         </div>
       </div>
@@ -88,7 +89,7 @@
           </svg>
           Samtykke
         </p>
-        <p class="mb-0" style="color: black;">Samtykke gitt av Navn Navnesen og Navn Navnesen 23.04.2024. Registrert av Navn Navnesen.</p>
+        <p class="mb-0" style="color: black;">Samtykke gitt av Lise Olsen 11.08.2025. Registrert av Sara Larsen.</p>
       </div>
     </div>
   </div>
