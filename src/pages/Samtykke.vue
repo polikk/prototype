@@ -24,6 +24,11 @@
         <p class="mb-0" style="color: black;">Bruker er glad i xxxx, har noen utfordringer med xxxx. Bor til vanlig sammen med xxx, som har 80% omsorg.</p>
         <p class="mb-0" style="color: black;">Beskrives av lærer som xxxxxx og xxxxxx. Trivsel på skolen oppsummeres som xxx.</p>
       </div>
+      <template v-for="status in statusOrder" :key="status">
+          <h2 class="status-title">Samtykke {{ status }}</h2>
+          <samtykke-card v-for="(item, idx) in grouped[status]" :key="item.Fil + idx" :value="item" />
+          <div v-if="grouped[status].length === 0" class="empty-status">Ingen samtykker med status "{{ status }}".</div>
+        </template>
     </div>
     <div class="w-25 ms-3" style="min-height: -webkit-fill-available;">
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
@@ -68,15 +73,36 @@
 </template>
 
 <script setup>
-// Add any logic or imports needed for the Samtykke page here
+import SamtykkeCard from '../components/SamtykkeCard.vue';
+import { samtykkeList, groupSamtykkeByStatus } from '../mock/samtykkeList.js';
+import { computed } from 'vue';
+
+const grouped = computed(() => groupSamtykkeByStatus(samtykkeList));
+const statusOrder = computed(() => Object.keys(grouped.value));
 </script>
 
 <style scoped>
 .samtykke-page {
-
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #387f931a;
+  padding: 32px 24px;
 }
 h1 {
   color: #387F93;
+  margin-bottom: 18px;
+}
+.status-title {
+  color: #387F93;
+  font-size: 1.3em;
+  margin: 32px 0 12px 0;
+  font-weight: bold;
+}
+.empty-status {
+  color: #888;
+  font-size: 1em;
   margin-bottom: 18px;
 }
 p {
