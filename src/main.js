@@ -18,7 +18,8 @@ const routes = [
   { path: '/about', component: AboutView },
   { path: '/contact', component: ContactView },
   { path: '/overview', component: OverviewRoute },
-    { path: '/consent', component: Samtykke }
+    { path: '/consent', component: Samtykke },
+     { path: '/empty', component: HomeView }
 ]
 
 const router = createRouter({
