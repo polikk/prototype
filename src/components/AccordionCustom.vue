@@ -3,19 +3,19 @@
     <Accordion :multiple="true">
       <AccordionTab v-for="(nivaa, i) in data" :key="i">
         <template #header>
-          <span>{{ nivaa.header }}</span>
+          <span class="nowrap">{{ nivaa.header }}</span>
           <CustomBadge type="blue" :style="{ marginLeft: '80%' }">Nivå</CustomBadge>
         </template>
         <Accordion :multiple="true">
           <AccordionTab v-for="(mal, j) in nivaa.subsections" :key="j">
             <template #header>
-              <span>{{ mal.header }}</span>
+              <span class="nowrap">{{ mal.header }}</span>
               <CustomBadge type="yellow" :style="{ marginLeft: '80%' }">Mål</CustomBadge>
             </template>
             <Accordion :multiple="true">
               <AccordionTab v-for="(tiltak, tiltakIdx) in mal.subsubsections" :key="tiltakIdx">
                 <template #header>
-                  <span>{{ tiltak.header }}</span>
+                  <span class="nowrap">{{ tiltak.header }}</span>
                   <CustomBadge type="green" :style="{ marginLeft: '80%' }">Tiltak</CustomBadge>
                 </template>
                 <DataTable :value="tiltak.table">
@@ -178,7 +178,7 @@ function toggleCommentInput(malIdx, tiltakIdx) {
   border-radius: 8px;
 }
 .p-badge {
-  margin-left : 80% !important;
+  margin-left : 75% !important;
 }
 
 .p-row-even{
@@ -206,5 +206,8 @@ function toggleCommentInput(malIdx, tiltakIdx) {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+.nowrap {
+  white-space: nowrap;
 }
 </style>

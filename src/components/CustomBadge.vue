@@ -32,6 +32,8 @@ const colorClass = {
   font-weight: 500;
   text-align: center;
   vertical-align: middle;
+  margin-right: 10px;
+  min-width: 70px;
 }
 .badge-blue {
   background: #2A7CC5;
