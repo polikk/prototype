@@ -4,19 +4,19 @@
       <AccordionTab v-for="(nivaa, i) in data" :key="i">
         <template #header>
           <span>{{ nivaa.header }}</span>
-          <Badge value="Nivå" style="margin-left:8px;" />
+  <CustomBadge type="blue" :style="{ marginLeft: '80%' }">Nivå</CustomBadge>
         </template>
         <Accordion>
           <AccordionTab v-for="(mal, j) in nivaa.subsections" :key="j">
             <template #header>
               <span>{{ mal.header }}</span>
-              <Badge value="Mål" style="margin-left:8px;" />
+  <CustomBadge type="yellow" :style="{ marginLeft: '80%' }">Mål</CustomBadge>
             </template>
             <Accordion>
               <AccordionTab v-for="(tiltak, k) in mal.subsubsections" :key="k">
                 <template #header>
                   <span>{{ tiltak.header }}</span>
-                  <Badge value="Tiltak" style="margin-left:8px;" />
+          <CustomBadge type="green" :style="{ marginLeft: '80%' }">Tiltak</CustomBadge>
                 </template>
                 <DataTable :value="tiltak.table">
                   <Column field="col1">
@@ -26,12 +26,15 @@
                   </Column>
                   <Column field="col2">
                     <template #body="{ data, index }">
-                      <span v-if="editRow !== `${i}-${j}-${k}-${index}-col2`">{{ data.col2 }}</span>
-                      <input v-else v-model="tiltak.table[index].col2" @blur="editRow = null" />
-                      <button
-                        style="border-radius: 50%; margin-left: 8px;"
-                        @click="editRow = `${i}-${j}-${k}-${index}-col2`"
-                      >✏️</button>
+                      <div class="col2-flex-row">
+                        <span v-if="editRow !== `${i}-${j}-${k}-${index}-col2`">{{ data.col2 }}</span>
+                        <input v-else v-model="tiltak.table[index].col2" @blur="editRow = null" />
+                        <IconButton
+                          @click="editRow = `${i}-${j}-${k}-${index}-col2`"
+                        >
+                          <VectorIcon />
+                        </IconButton>
+                      </div>
                     </template>
                   </Column>
                 </DataTable>
@@ -62,7 +65,9 @@ import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
-import Badge from 'primevue/badge';
+import CustomBadge from './CustomBadge.vue';
+import VectorIcon from './VectorIcon.vue';
+import IconButton from './IconButton.vue';
 import { accordionData } from '../mock/accordionData';
 import MessageCard from './MessageCard.vue';
 import FileUploadList from './FileUploadList.vue';
@@ -83,20 +88,23 @@ const data = ref(accordionData);
   margin-left: 0 !important;
 }
 .p-badge {
-  margin-left : 85% !important;
+  margin-left : 80% !important;
 }
+
 .p-row-even{
     background: #9DC2CC1F!important;
     border: none;
     td {
-        padding: 5px!important;
+        padding:5px 20px!important;
         border: none!important;
+        height: 20px!important;
     }
 }
 .p-row-odd{
     td {
-        padding: 5px!important;
+        padding:5px 20px!important;
         border: none!important;
+        height: 20px!important;
     }
     background: #9DC2CC1F!important;
     border: none;
@@ -104,4 +112,9 @@ const data = ref(accordionData);
 .p-datatable-header-cell {
     display: none;
 }
+  .col2-flex-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 </style>
