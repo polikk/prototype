@@ -9,11 +9,13 @@ import { createPinia } from 'pinia';
 import HomeView from './HomeView.vue'
 import AboutView from './AboutView.vue'
 import ContactView from './ContactView.vue'
+import OverviewRoute from './Overview.vue'
 
 const routes = [
   { path: '/', component: HomeView },
   { path: '/about', component: AboutView },
-  { path: '/contact', component: ContactView }
+  { path: '/contact', component: ContactView },
+  { path: '/overview', component: OverviewRoute }
 ]
 
 const router = createRouter({
