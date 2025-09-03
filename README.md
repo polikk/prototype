@@ -30,6 +30,8 @@ npm run build
 
 # Prototype Vue Project
 
+![UML Diagram](uml-diagram.png)
+
 ## Component & Data UML Diagram
 
 ```mermaid
