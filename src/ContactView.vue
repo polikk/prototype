@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex">
+  <div class="d-flex" style="align-items: center; justify-content: center;">
     <div>
       <div class="bg-white d-flex align-items-center p-3 mb-3" style="border-radius: 8px;">
         <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
@@ -12,8 +12,6 @@
         Du har ikke tilgang til å se alle opplysninger om brukeren. Ved behov, be om innsyn i den aktuelle saken.
       </div>
       <AccordionCustom />
-    </div>
-    <div class="bg-white d-flex align-items-center w-25 p-3 ms-3" style="border-radius: 8px;">
     </div>
   </div>
 </template>
