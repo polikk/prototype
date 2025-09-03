@@ -5,7 +5,7 @@
         <div class="d-flex mb-3">
           <img src="/images/User1.png" alt="User photo" class="user-photo" style="width: 80px; height: 80px; border-radius: 64px;">
           <div>
-            <p class="ms-2 mb-2" style="color: black;"><strong>Philip Pedersen</strong></p>
+            <p class="ms-2 mb-2" style="color: black;"><strong>Per</strong></p>
             <div class="ms-2 d-flex">
               <div>
                 <p class="me-2 mb-0" style="color: black;"><strong>Født</strong></p>
@@ -13,7 +13,7 @@
                 <p class="me-2 mb-0" style="color: black;"><strong>Sted</strong></p>
               </div>
               <div>
-                <p class="mb-0" style="color: black;">19.03.2015</p>
+                <p class="mb-0" style="color: black;">19.03.2017</p>
                 <p class="mb-0" style="color: black;">Gateadresse 01</p>
                 <p class="mb-0" style="color: black;">6500 Kristiansund</p>
               </div>
