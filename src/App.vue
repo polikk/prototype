@@ -1,5 +1,6 @@
 <template>
   <top-nav :pageHeading="`Oversikt`"></top-nav>
+  <navigation-panel></navigation-panel>
   <main>
     <div style="padding-top: 32px; padding-bottom: 32px; padding-left: 48px; padding-right: 48px; min-height: calc(100vh - 60px);" class="bg-light">
       <router-view />
@@ -38,4 +39,5 @@ header {
 
 <script setup>
 import TopNav from "./components/topNav.vue";
+import NavigationPanel from "./components/NavigationPanel.vue";
 </script>
