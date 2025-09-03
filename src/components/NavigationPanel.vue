@@ -2,10 +2,14 @@
   <nav class="nav-panel">
     <ul>
       <li v-for="item of navItems" :key="item.label" :class="{ active: $route.path === item.route }">
-        <router-link :to="item.route" class="nav-link">
+        <component
+          :is="item.isDisabled ? 'span' : 'router-link'"
+          :to="item.route"
+          class="nav-link"
+        >
           <span v-if="item.icon" class="nav-icon"><component :is="item.icon" /></span>
           <span>{{ item.label }}</span>
-        </router-link>
+        </component>
       </li>
     </ul>
   </nav>
@@ -17,14 +21,14 @@ import { ref, defineProps, defineEmits } from 'vue';
 const navItems = [
   { label: 'Oversikt', route: '/overview' },
   { label: 'Mål og tiltak', route: '/contact' },
-  { label: 'Meldinger', route: '/' },
-  { label: 'Avtaler', route: '/' },
-  { label: 'Tidslinje', route: '/' },
-  { label: 'Filer', route: '/' },
-  { label: 'Involverte parter', route: '/' },
-  { label: 'Referat', route: '/' },
+  { label: 'Meldinger', route: '/', isDisabled: true },
+  { label: 'Avtaler', route: '/', isDisabled: true },
+  { label: 'Tidslinje', route: '/', isDisabled: true },
+  { label: 'Filer', route: '/', isDisabled: true },
+  { label: 'Involverte parter', route: '/', isDisabled: true },
+  { label: 'Referat', route: '/', isDisabled: true },
   { label: 'Samtykke', route: '/consent' },
-  { label: 'Historikk', route: '/' }
+  { label: 'Historikk', route: '/', isDisabled: true }
 ];
 
 

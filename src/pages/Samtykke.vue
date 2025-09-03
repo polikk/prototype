@@ -18,11 +18,8 @@
     <div class="w-25 ms-3" style="min-height: -webkit-fill-available; flex-grow: 1;">
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
         <p class="mb-2" style="color: black;">Send inn nytt samtykke</p>
-        <div class="alert alert-info p-2 mb-3" role="alert">
+        <div class="alert alert-info p-2 mb-0" role="alert">
           Du har ingen endringer som gjør at du behøver å sende inn nytt samtykke.
-        </div>
-        <div class="d-flex">
-          <button class="btn btn-primary ms-auto" @click.prevent="">Endre samtykkemal</button>
         </div>
       </div>
       <div class="bg-white p-3 mb-4" style="border-radius: 8px;">
