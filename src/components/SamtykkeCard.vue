@@ -47,6 +47,7 @@ const statusClass = computed(() => {
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 10px;
+  position: relative;
 }
 .file-name {
   font-weight: bold;
@@ -59,6 +60,8 @@ const statusClass = computed(() => {
   font-size: 0.98em;
   font-weight: 500;
   color: #fff;
+  position: absolute;
+  top: 12px;
 }
 .status-approved {
   background: #4caf50;
