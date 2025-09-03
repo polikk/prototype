@@ -21,8 +21,12 @@
           </div>
         </div>
         <p class="mb-0" style="color: black;"><strong>Første aktivitet registrert 13.11.2023</strong></p>
-        <p class="mb-0" style="color: black;">Bruker er glad i xxxx, har noen utfordringer med xxxx. Bor til vanlig sammen med xxx, som har 80% omsorg.</p>
-        <p class="mb-0" style="color: black;">Beskrives av lærer som xxxxxx og xxxxxx. Trivsel på skolen oppsummeres som xxx.</p>
+        <p class="mb-0" style="color: black; max-width: 600px;">
+          Per er 8 år og trives ikke på skolen. Han har skolevegring, og synes hverdagen er vanskelig.
+Han er glad i tog og bygger gjerne togbaner hjemme. Samtidig synes han at det er litt vanskelig med mange mennesker og høye lyder.
+Per bor annenhver uke hos mamma og pappa, som er skilt.
+Læreren beskriver Per som litt stille og inadvent, men han er glad i å være sammen med vennen sin som heter Jonas.
+        </p>
       </div>
       <AccordionCustom :disabled="true" />
     </div>
@@ -89,7 +93,8 @@
           </svg>
           Samtykke
         </p>
-        <p class="mb-0" style="color: black;">Samtykke gitt av Lise Olsen 11.08.2025. Registrert av Sara Larsen.</p>
+        <p class="mb-0" style="color: black;">Samtykke gitt av Lise Olsen 11.08.2025.</p>
+        <p class="mb-0" style="color: black;">Registrert av Sara Larsen.</p>
       </div>
     </div>
   </div>
