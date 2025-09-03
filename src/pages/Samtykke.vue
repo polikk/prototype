@@ -27,41 +27,66 @@
     </div>
     <div class="w-25 ms-3" style="min-height: -webkit-fill-available;">
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
-        <p class="mb-2" style="color: black;">Uleste beskjeder</p>
-        <div class="bg-light px-3 py-2">
-          <p class="mb-0" style="color: black;">12.05.25 kl. 14:30</p>
-          <p class="mb-0" style="color: black;"><strong>Dette er en tittel på melding</strong></p>
+        <p class="mb-2" style="color: black;">Send inn nytt samtykke</p>
+        <div class="alert alert-info p-2 mb-3" role="alert">
+          Du har ingen endringer som gjør at du behøver å sende inn nytt samtykke.
+        </div>
+        <div class="d-flex">
+          <button class="btn btn-primary ms-auto" @click.prevent="">Endre samtykkemal</button>
         </div>
       </div>
       <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
-        <p class="mb-2" style="color: black;">Kommende avtaler</p>
-        <div class="bg-light px-3 py-2">
-          <p class="mb-0" style="color: black;">26.05.25 kl. 13:00-15:00</p>
-          <p class="mb-0" style="color: black;">Morten Mortensen</p>
-        </div>
-      </div>
-      <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
-        <p class="mb-2" style="color: black;">Koordinator</p>
-        <div class="d-flex align-items-center">
-          <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="User photo" class="user-photo" style="width: 40px; height: 40px; border-radius: 32px;">
-          <div class="ms-2">
-            <p class="mb-0" style="color: black;"><strong>Morten Mortensen</strong></p>
-            <p class="mb-0" style="color: black;">Barnevernet</p>
+        <p class="mb-3" style="color: black;">Innvolverte i saken</p>
+        <p class="mb-2" style="color: black;">Venter på godkjenning</p>
+        <div class="ms-2 mb-3 d-flex">
+          <div>
+            <p class="me-2 mb-0" style="color: black;"><strong>Rolle</strong></p>
+            <p class="me-2 mb-0" style="color: black;"><strong>Navn</strong></p>
+            <p class="me-2 mb-0" style="color: black;"><strong>Lagt til</strong></p>
+          </div>
+          <div>
+            <p class="mb-0" style="color: black;">Ansatt barnevernet</p>
+            <p class="mb-0" style="color: black;">Heidi Håkonsen</p>
+            <p class="mb-0" style="color: black;">20.05.2025</p>
           </div>
         </div>
-      </div>
-      <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
-        <p class="mb-2" style="color: black;">Involverte parter</p>
-        <ul class="mb-0">
-          <li>Barnevern (Stafettholder)</li>
-          <li>PPT</li>
-          <li>Politi (ekstern)</li>
-          <li>Trener (ekstern)</li>
-        </ul>
-      </div>
-      <div class="bg-white p-3 mb-3" style="border-radius: 8px;">
-        <p class="mb-2" style="color: black;">Samtykke</p>
-        <p class="mb-0" style="color: black;">Samtykke gitt av Navn Navnesen og Navn Navnesen 23.04.2024. Registrert av Navn Navnesen.</p>
+        <p class="mb-2" style="color: black;">Avklart samtykke</p>
+        <div class="ms-2 mb-2 d-flex">
+          <div>
+            <p class="me-2 mb-0" style="color: black;"><strong>Rolle</strong></p>
+            <p class="me-2 mb-0" style="color: black;"><strong>Navn</strong></p>
+            <p class="me-2 mb-0" style="color: black;"><strong>Lagt til</strong></p>
+          </div>
+          <div>
+            <p class="mb-0" style="color: black;">Koordinator</p>
+            <p class="mb-0" style="color: black;">Morten Mortensen</p>
+            <p class="mb-0" style="color: black;">20.05.2025</p>
+          </div>
+        </div>
+        <div class="ms-2 mb-2 d-flex">
+          <div>
+            <p class="me-2 mb-0" style="color: black;"><strong>Rolle</strong></p>
+            <p class="me-2 mb-0" style="color: black;"><strong>Navn</strong></p>
+            <p class="me-2 mb-0" style="color: black;"><strong>Lagt til</strong></p>
+          </div>
+          <div>
+            <p class="mb-0" style="color: black;">Lærer</p>
+            <p class="mb-0" style="color: black;">Lars Larsen</p>
+            <p class="mb-0" style="color: black;">13.03.2023</p>
+          </div>
+        </div>
+        <div class="ms-2 d-flex">
+          <div>
+            <p class="me-2 mb-0" style="color: black;"><strong>Rolle</strong></p>
+            <p class="me-2 mb-0" style="color: black;"><strong>Navn</strong></p>
+            <p class="me-2 mb-0" style="color: black;"><strong>Lagt til</strong></p>
+          </div>
+          <div>
+            <p class="mb-0" style="color: black;">Fotballtrener</p>
+            <p class="mb-0" style="color: black;">Lene Hansen</p>
+            <p class="mb-0" style="color: black;">12.04.2024</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
