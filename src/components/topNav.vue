@@ -22,12 +22,24 @@
 						</img>
 						<span class="me-3" style="vertical-align: middle; color: black;">{{ loggedInPersonName }}</span>
 					</div>
-					<button class="btn btn-outline-primary" @click.prevent="">Logg ut</button>
+					<button class="btn btn-outline-primary custom-button" @click.prevent="">Logg ut</button>
 				</div>
 			</div>
 		</nav>
 	</div>
 </template>
+
+<style scoped>
+.custom-button {
+  border-color: #141b4d;
+  color: #141b4d;
+}
+.custom-button:hover {
+  background-color: #141b4d;
+  color: #fff;
+}
+</style>
+
 <script lang="ts" setup>
 import { onMounted, PropType, ref } from "vue";
 import { useRouter } from "vue-router";

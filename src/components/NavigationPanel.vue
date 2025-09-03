@@ -1,14 +1,14 @@
 <template>
-  <nav class="nav-panel">
+  <nav class="nav-panel" style="border-right: none;">
     <ul>
-      <li v-for="item of navItems" :key="item.label" :class="{ active: $route.path === item.route }">
+      <li v-for="item of navItems" :key="item.label" :class="{ active: $route.path === item.route, enabled: !item.isDisabled }">
         <component
           :is="item.isDisabled ? 'span' : 'router-link'"
           :to="item.route"
           class="nav-link"
         >
           <span v-if="item.icon" class="nav-icon"><component :is="item.icon" /></span>
-          <span>{{ item.label }}</span>
+          <span class="nav-label" :class="{ 'nav-label-enabled': !item.isDisabled }">{{ item.label }}</span>
         </component>
       </li>
     </ul>
@@ -61,12 +61,12 @@ function select(item) {
   align-items: center;
   gap: 12px;
   padding: 12px;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 1.08em;
   color: #387F93;
   transition: background 0.2s, color 0.2s;
 }
-.nav-panel li.active, .nav-panel li:hover {
+.nav-panel li.active, .nav-panel li.enabled, .nav-panel li.enabled:hover {
   background: #e6f3f7;
   color: #1a4e5d;
 }
@@ -74,6 +74,13 @@ function select(item) {
   font-size: 1.2em;
   display: flex;
   align-items: center;
+}
+.nav-label-enabled, .nav-panel li.enabled span {
+  background: #e6f3f7 !important;
+}
+.nav-panel li.enabled:hover {
+  height: 46px;
+  border-bottom: 2px solid #141b4d;
 }
 .nav-link {
   display: flex;
