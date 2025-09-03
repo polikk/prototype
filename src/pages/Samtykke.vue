@@ -74,7 +74,7 @@
           <div>
             <p class="mb-0" style="color: black;">Fotballtrener</p>
             <p class="mb-0" style="color: black;">Lene Hansen</p>
-            <p class="mb-0" style="color: black;">12.04.2024</p>
+            <p class="mb-0" style="color: black;">12.04.2024 </p>
           </div>
         </div>
       </div>
