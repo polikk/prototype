@@ -23,7 +23,7 @@ const navItems = [
   { label: 'Filer', route: '/' },
   { label: 'Involverte parter', route: '/' },
   { label: 'Referat', route: '/' },
-  { label: 'Samtykke', route: '/' },
+  { label: 'Samtykke', route: '/consent' },
   { label: 'Historikk', route: '/' }
 ];
 

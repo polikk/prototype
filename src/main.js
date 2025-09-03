@@ -10,13 +10,15 @@ import HomeView from './HomeView.vue'
 import AboutView from './AboutView.vue'
 import ContactView from './ContactView.vue'
 import OverviewRoute from './Overview.vue'
+import Samtykke from './pages/Samtykke.vue';
 
 const routes = [
   { path: '/', component: HomeView },
     { path: '/prototype', component: HomeView },
   { path: '/about', component: AboutView },
   { path: '/contact', component: ContactView },
-  { path: '/overview', component: OverviewRoute }
+  { path: '/overview', component: OverviewRoute },
+    { path: '/consent', component: Samtykke }
 ]
 
 const router = createRouter({
